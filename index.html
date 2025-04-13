@@ -23,6 +23,28 @@
     #transcriptBox {
       margin-top: 15px;
     }
+    .external-link-box {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      max-width: 700px;
+      text-align: center;
+    }
+    .external-link-box a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #ffffff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .external-link-box a:hover {
+      background-color: #ddd;
+    }
   </style>
 </head>
 <body>
@@ -33,7 +55,7 @@
     Please note: the files are provided as a ZIP archive, so you will need to download and extract them.</p>
     <a href="https://qualifications.pearson.com/en/qualifications/edexcel-gcses/japanese-2017.coursematerials.html#filterQuery=Pearson-UK:Category%2FExam-materials" target="_blank">Open Student Cards</a>
   </div>
-  
+
   <div class="section-box">
     <h2>2019 Role Play Cards</h2>
     <div id="rolePlay2019"></div>
@@ -56,6 +78,7 @@
 
   <div id="questionContainer" class="container hidden">
     <button id="nextQuestionButton">Next Question</button>
+    <button id="finishButton" class="hidden">Finish</button>
     <button id="skipQuestionButton">Skip Question</button>
     <button id="showTranscriptButton">Transcript: OFF</button>
     <div id="currentQuestion"></div>

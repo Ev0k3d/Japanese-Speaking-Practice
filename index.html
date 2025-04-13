@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Speaking Practice</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .section-box {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .section-box button {
+      margin: 5px;
+    }
+    #transcriptBox {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Japanese Speaking Practice</h1>
+
+  <div class="section-box">
+    <h2>2019 Role Play Cards</h2>
+    <div id="rolePlay2019"></div>
+  </div>
+
+  <div class="section-box">
+    <h2>2019 Picture Cards</h2>
+    <div id="picture2019"></div>
+  </div>
+
+  <div class="section-box">
+    <h2>2022 Role Play Cards</h2>
+    <div id="rolePlay2022"></div>
+  </div>
+
+  <div class="section-box">
+    <h2>2022 Picture Cards</h2>
+    <div id="picture2022"></div>
+  </div>
+
+  <div id="questionContainer" class="container hidden">
+    <button id="nextQuestionButton">Next Question</button>
+    <button id="skipQuestionButton">Skip Question</button>
+    <button id="showTranscriptButton">Transcript: OFF</button>
+    <div id="currentQuestion"></div>
+  </div>
+
+  <div id="transcriptContainer" class="container hidden">
+    <h2>Transcript</h2>
+    <div id="transcriptBox"></div>
+  </div>
+
+  <div id="downloadSection" class="container hidden">
+    <p id="completionMessage"></p>
+    <a id="downloadLink" class="hidden">Click to download most recent recording</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

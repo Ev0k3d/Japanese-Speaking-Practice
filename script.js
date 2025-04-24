@@ -478,12 +478,12 @@ const pictureBasedCards2024 = {
     });
   }
   
-  populateButtons(rolePlayCards2019, "rolePlay2019");
-  populateButtons(pictureBasedCards2019, "picture2019");
-  populateButtons(rolePlayCards2022, "rolePlay2022");
-  populateButtons(pictureBasedCards2022, "picture2022");
-  populateButtons(rolePlayCards2024, "rolePlay2024");
-  populateButtons(pictureBasedCards2024, "picture2024");
+    populateButtons(rolePlayCards2019, "rolePlay2019");
+    populateButtons(pictureBasedCards2019, "picture2019");
+    populateButtons(rolePlayCards2022, "rolePlay2022");
+    populateButtons(pictureBasedCards2022, "picture2022");
+    populateButtons(rolePlayCards2024, "rolePlay2024");
+    populateButtons(pictureBasedCards2024, "picture2024");
   
   function startSet(setName, questions) {
     currentSet = questions;

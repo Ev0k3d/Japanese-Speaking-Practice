@@ -478,7 +478,7 @@ function populateButtons(sourceData, containerId) {
     btn.onclick = () => startSet(set, sourceData[set]);
     container.appendChild(btn);
   });
-  }
+}
 
 populateButtons(rolePlayCards2019, "rolePlay2019");
 populateButtons(pictureBasedCards2019, "picture2019");

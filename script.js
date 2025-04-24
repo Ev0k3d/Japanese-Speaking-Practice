@@ -72,7 +72,7 @@ const rolePlayCards2019 = {
 };
   
 
-pictureBasedCards2019 = {
+const pictureBasedCards2019 = {
     "2019 HP1": [
       "このしゃしんについてはなしてください。",
       "じどうはんばいきについて、どうおもいますか。",
@@ -145,7 +145,7 @@ pictureBasedCards2019 = {
     ]
   };
 
-  const rolePlayCards2022 = {
+const rolePlayCards2022 = {
     "2022 HR1": [
       "ペンフレンドはなんじんですか。",
       "どうしてそのひとがすきですか。",
@@ -218,7 +218,7 @@ pictureBasedCards2019 = {
     ]
   };
   
-  const pictureBasedCards2022 = {
+const pictureBasedCards2022 = {
     "2022 HP1": [
       "このしゃしんについてはなしてください。",
       "がいこくじんのともだちはいいですね。どうおもいますか。",
@@ -291,7 +291,7 @@ pictureBasedCards2019 = {
     ]
   };
 
-  const rolePlayCards2024 = {
+const rolePlayCards2024 = {
     "2024 RP1": [
       "がっこうで どのすぽーつを しますか。",
       "そのすぽーつは どうですか。",
@@ -364,7 +364,7 @@ pictureBasedCards2019 = {
     ]
   };
 
-  const pictureBasedCards2024 = {
+const pictureBasedCards2024 = {
     "2024 HP1": [
         "このしゃしんについてはなしてください。",
         "たんじょうびぱーてぃーは いいですね。どうおもいますか。",
@@ -465,7 +465,7 @@ pictureBasedCards2019 = {
     rolePlayCards2022: 'rolePlay2022',
     pictureBasedCards2022: 'picture2022'
     rolePlayCards2024: 'rolePlay2024',
-    pictureBasedCards2024: 'picture2019
+    pictureBasedCards2024: 'picture2024',
   };
   
   function populateButtons(sourceData, containerId) {

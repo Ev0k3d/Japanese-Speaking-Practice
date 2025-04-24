@@ -459,6 +459,7 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
   mediaRecorder = new MediaRecorder(stream);
   mediaRecorder.ondataavailable = event => audioChunks.push(event.data);
 });
+}
 
 const containerIds = {
   rolePlayCards2019: 'rolePlay2019',

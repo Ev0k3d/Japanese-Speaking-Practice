@@ -1,4 +1,4 @@
-const rolePlay2019 = {
+const rolePlayCards2019 = {
   "2019 HR1": [
     "こんばんは。どうしましたか。",
     "いつからですか。",

@@ -15,15 +15,9 @@ body {
 
 /* Gradient animation keyframes */
 @keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* All boxes with animated gradient */
@@ -37,13 +31,28 @@ body {
         #3a1f4a,   /* dark purple */
         #1e1e1e,   /* glossy black */
         #131316    /* coalmine */
-    );
-    background-size: 400% 400%;
-    animation: gradientShift 18s ease infinite;
+    ) !important;
+    background-size: 400% 400% !important;
+    animation: gradientShift 18s ease infinite !important;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     padding: 20px;
     margin: 20px 0;
+    color: white;
+}
+
+/* Headings inside boxes */
+.section-box h2,
+.container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Paragraph spacing */
+.section-box p,
+.container p {
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 /* Buttons */

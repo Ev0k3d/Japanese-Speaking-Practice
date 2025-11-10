@@ -17,26 +17,37 @@ body {
 .container {
     width: 90%;
     max-width: 600px;
-    background: rgba(30, 30, 31, 0.85); /* dark with slight transparency */
+    background: linear-gradient(
+        135deg,
+        #0b0c1a 0%,   /* midnight */
+        #1a1a2e 30%,  /* mysterious depths */
+        #3a1f4a 60%,  /* dark purple */
+        #1e1e1e 90%   /* glossy black */
+    );
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /* Section boxes */
 .section-box {
-    background: rgba(40, 40, 41, 0.85); /* slightly lighter for contrast */
+    background: linear-gradient(
+        135deg,
+        #1a1a2e 0%,  /* mysterious depths */
+        #3a1f4a 50%, /* dark purple */
+        #1e1e1e 100% /* glossy black */
+    );
     padding: 20px;
     margin: 30px 0;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Buttons */
 button {
-    background: #3a1f4a; /* dark purple to match gradient vibe */
+    background: #3a1f4a; /* dark purple */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -48,7 +59,7 @@ button {
 }
 
 button:hover {
-    background: #5a3a7c; /* slightly lighter purple on hover */
+    background: #5a3a7c; /* lighter purple on hover */
 }
 
 /* Section box buttons */
@@ -61,7 +72,7 @@ button:hover {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: rgba(30, 30, 31, 0.8); /* dark dropdown */
+    background: rgba(30, 30, 31, 0.85); /* dark with some transparency */
     border: none;
     padding: 10px;
     border-radius: 10px;

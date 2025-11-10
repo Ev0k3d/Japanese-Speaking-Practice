@@ -13,36 +13,54 @@ body {
     text-align: center;
 }
 
-/* Containers */
+/* Gradient animation keyframes */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Section boxes with animated gradient */
+.section-box {
+    background: linear-gradient(
+        135deg,
+        #0b0c1a,  /* midnight */
+        #1a1a2e,  /* mysterious depths */
+        #3a1f4a,  /* dark purple */
+        #1e1e1e   /* glossy black */
+    );
+    background-size: 400% 400%; /* needed for animation */
+    animation: gradientShift 15s ease infinite;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Containers with animated gradient */
 .container {
     width: 90%;
     max-width: 600px;
     background: linear-gradient(
         135deg,
-        #0b0c1a 0%,   /* midnight */
-        #1a1a2e 30%,  /* mysterious depths */
-        #3a1f4a 60%,  /* dark purple */
-        #1e1e1e 90%   /* glossy black */
+        #1a1a2e,
+        #3a1f4a,
+        #1e1e1e,
+        #131316   /* coalmine */
     );
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-/* Section boxes */
-.section-box {
-    background: linear-gradient(
-        135deg,
-        #1a1a2e 0%,  /* mysterious depths */
-        #3a1f4a 50%, /* dark purple */
-        #1e1e1e 100% /* glossy black */
-    );
-    padding: 20px;
-    margin: 30px 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Buttons */
@@ -59,12 +77,12 @@ button {
 }
 
 button:hover {
-    background: #5a3a7c; /* lighter purple on hover */
+    background: #5a3a7c; /* lighter purple */
 }
 
 /* Section box buttons */
 .section-box button {
-    margin: 10px 5px;
+    margin: 5px;
 }
 
 /* Dropdown */
@@ -72,7 +90,7 @@ button:hover {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: rgba(30, 30, 31, 0.85); /* dark with some transparency */
+    background: rgba(30, 30, 31, 0.85);
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -87,4 +105,37 @@ button:hover {
 /* Transcript box */
 #transcriptBox {
     margin-top: 15px;
+}
+
+/* External link boxes */
+.external-link-box {
+    background: linear-gradient(
+        135deg,
+        #1a1a2e,
+        #3a1f4a,
+        #1e1e1e
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 18s ease infinite;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.external-link-box a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3a1f4a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.external-link-box a:hover {
+    background-color: #5a3a7c;
 }

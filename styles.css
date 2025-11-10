@@ -30,12 +30,13 @@ body {
 .section-box {
     background: linear-gradient(
         135deg,
-        #0b0c1a,  /* midnight */
-        #1a1a2e,  /* mysterious depths */
-        #3a1f4a,  /* dark purple */
-        #1e1e1e   /* glossy black */
+        #0b0c1a,   /* midnight */
+        #1a1a2e,   /* mysterious depths */
+        #3a1f4a,   /* dark purple */
+        #1e1e1e,   /* glossy black */
+        #131316    /* coalmine */
     );
-    background-size: 400% 400%; /* needed for animation */
+    background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
     padding: 20px;
     margin: 30px 0;
@@ -49,10 +50,11 @@ body {
     max-width: 600px;
     background: linear-gradient(
         135deg,
+        #0b0c1a,
         #1a1a2e,
         #3a1f4a,
         #1e1e1e,
-        #131316   /* coalmine */
+        #131316
     );
     background-size: 400% 400%;
     animation: gradientShift 20s ease infinite;
@@ -111,9 +113,11 @@ button:hover {
 .external-link-box {
     background: linear-gradient(
         135deg,
+        #0b0c1a,
         #1a1a2e,
         #3a1f4a,
-        #1e1e1e
+        #1e1e1e,
+        #131316
     );
     background-size: 400% 400%;
     animation: gradientShift 18s ease infinite;

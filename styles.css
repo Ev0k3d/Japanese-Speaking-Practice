@@ -1,5 +1,6 @@
+/* Body */
 body {
-    background: #1e1e1f/*linear-gradient (to right, #6a11cb, #2575fc)*/ ; 
+    background: #1e1e1f;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 40px 0;
@@ -12,29 +13,31 @@ body {
     text-align: center;
 }
 
+/* Containers */
 .container {
-    background: rgba(30, 30, 31, 0.8); /* dark grey with some transparency */
+    width: 90%;
+    max-width: 600px;
+    background: rgba(30, 30, 31, 0.85); /* dark with slight transparency */
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* slightly darker shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/* Section boxes */
 .section-box {
-    background: rgba(40, 40, 41, 0.8); /* slightly lighter than container for contrast */
+    background: rgba(40, 40, 41, 0.85); /* slightly lighter for contrast */
     padding: 20px;
     margin: 30px 0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.section-box button {
-    margin: 10px 5px;
-}
-
+/* Buttons */
 button {
-    background: #ffffff;
+    background: #3a1f4a; /* dark purple to match gradient vibe */
+    color: white;
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -45,14 +48,20 @@ button {
 }
 
 button:hover {
-    background: #ddd;
+    background: #5a3a7c; /* slightly lighter purple on hover */
 }
 
+/* Section box buttons */
+.section-box button {
+    margin: 10px 5px;
+}
+
+/* Dropdown */
 .dropdown {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(30, 30, 31, 0.8); /* dark dropdown */
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -64,6 +73,7 @@ button:hover {
     color: black;
 }
 
+/* Transcript box */
 #transcriptBox {
     margin-top: 15px;
 }
